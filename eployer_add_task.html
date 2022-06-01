@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head> <title>Workable</title>
+        <title class="Calligraffitti">Workable</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="employer_add_task.js"></script>
+    </head>
+    <body>
+        <h1 class="poppins indent" style="font-size: 50px;">Task Details</h1>
+        <br>
+        <h1 class="poppins indent">Task Name</h1>
+        <input class="poppins indent" type="text" id="Task_name">
+        <br>
+        <h1 class="poppins indent">Task Description</h1>
+        <input class="poppins indent" type="text" style="height: 300px; width: 300px;" id="Task_Description">
+        <br>
+        <h1 class="poppins indent">Task Wage (₹)</h1>
+        <input class="poppins indent" type="text"id="Task_Wage">
+        <br>
+        <br>
+        <h1 class="poppins indent">Add Attachments (if any) below.</h1>
+
+        <form action="/action_page.php">
+            <br>
+            <input class="poppins indent" type="file" id="myFile" name="filename" style="font-size: 35px;">
+            <br>
+            <input class="poppins indent" type="submit" style="font-size: 35px;" onclick="save()">
+          </form>
+    </body>
+</html>
